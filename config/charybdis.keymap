@@ -72,7 +72,7 @@
         BASE {
             bindings = <
 &kp TAB         &mt EXCLAMATION Q  &mt AT_SIGN W       &mt POUND E          &mt DOLLAR R        &mt PERCENT T    &mt CARET Y  &mt AMPERSAND U     &mt ASTERISK I        &mt LEFT_PARENTHESIS O  &mt RIGHT_PARENTHESIS P  &kp BSPC
-&kp ESC         &u_mt LEFT_GUI A   &u_mt LEFT_ALT S    &u_mt LCTRL D        &u_mt LEFT_SHIFT F  &kp G            &kp H        &u_mt LEFT_SHIFT J  &u_mt RCTRL K         &u_mt RIGHT_ALT L       &u_mt RIGHT_GUI SEMI     &mt PIPE APOS
+&kp ESC         &u_mt LEFT_GUI A   &u_mt LEFT_ALT S    &u_mt LCTRL D        &u_mt LEFT_SHIFT F  &lt 6 G          &lt 6 H      &u_mt LEFT_SHIFT J  &u_mt RCTRL K         &u_mt RIGHT_ALT L       &u_mt RIGHT_GUI SEMI     &mt PIPE APOS
 &kp LEFT_SHIFT  &mt LEFT_BRACE Z   &mt LEFT_BRACKET X  &mt RIGHT_BRACKET C  &mt RIGHT_BRACE V   &lt 5 B          &lt 5 N      &mt EQUAL M         &mt UNDERSCORE COMMA  &mt MINUS DOT           &mt BACKSLASH FSLH       &mt TILDE GRAVE
                                                        &kp LCTRL            &kp SPACE           &mo 1            &mo 2        &kp RET
             >;
@@ -80,9 +80,9 @@
 
         NUM {
             bindings = <
-&trans  &trans    &kp UP    &trans     &trans  &trans    &kp N7           &kp N8                &kp N9          &kp N0  &kp HOME  &kp F1
-&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans    &kp N4           &u_mt RIGHT_SHIFT N5  &u_mt RCTRL N6  &trans  &trans    &kp F10
-&trans  &trans    &trans    &trans     &trans  &trans    &kp N1           &kp N2                &kp N3          &trans  &trans    &kp F20
+&trans  &trans    &kp UP    &trans     &trans  &trans    &kp KP_MULTIPLY  &kp KP_NUMBER_7                &kp KP_NUMBER_8          &kp KP_NUMBER_9  &kp KP_N0  &kp FSLH
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans    &kp KP_PLUS      &u_mt RIGHT_SHIFT KP_NUMBER_4  &u_mt RCTRL KP_NUMBER_5  &kp KP_N6        &kp EQUAL  &kp PERCENT
+&trans  &trans    &trans    &trans     &trans  &trans    &kp KP_MINUS     &kp KP_NUMBER_1                &kp KP_NUMBER_2          &kp KP_NUMBER_3  &kp DOT    &trans
                             &trans     &trans  &trans    &lt 3 BACKSPACE  &kp LSHFT
             >;
         };
@@ -120,6 +120,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
+            >;
+        };
+
+        BULETOOTH {
+            bindings = <
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
+&trans       &trans        &trans        &trans        &bt BT_PRV    &trans          &trans        &bt BT_NXT    &trans        &trans        &trans        &trans
+&bootloader  &trans        &trans        &trans        &trans        &trans          &trans        &trans        &trans        &trans        &trans        &bootloader
+                                         &trans        &trans        &trans          &trans        &trans
             >;
         };
     };
