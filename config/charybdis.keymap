@@ -14,24 +14,16 @@
     combos {
         compatible = "zmk,combos";
 
-        LeftClickRight {
-            bindings = <&mkp LCLK>;
-            key-positions = <19 20>;
+        back {
+            bindings = <&mkp MB4>;
+            key-positions = <32 31>;
+            layers = <0>;
         };
 
-        RightClickRight {
-            bindings = <&mkp MCLK>;
-            key-positions = <20 21>;
-        };
-
-        MiddleClickRight {
-            bindings = <&mkp RCLK>;
-            key-positions = <21 22>;
-        };
-
-        Delete {
-            bindings = <&kp DELETE>;
-            key-positions = <8 9>;
+        forward {
+            bindings = <&mkp MB5>;
+            key-positions = <33 32>;
+            layers = <0>;
         };
     };
 
@@ -106,10 +98,10 @@
 
         AUTO-MOUSE {
             bindings = <
-&kp BSPC  &trans    &trans     &trans     &trans     &kp DELETE    &kp DELETE  &trans     &trans     &trans     &trans    &kp BSPC
-&trans    &trans    &trans     &trans     &trans     &trans        &trans      &trans     &trans     &trans     &trans    &trans
-&trans    &mkp MB5  &mkp RCLK  &mkp MCLK  &mkp RCLK  &mkp MB4      &mkp MB4    &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB5  &trans
-                               &mkp LCLK  &trans     &mkp RCLK     &mkp RCLK   &mkp LCLK
+&kp BSPC  &trans  &trans     &trans     &trans     &kp DELETE    &kp DELETE  &trans     &trans     &trans     &trans  &kp BSPC
+&trans    &trans  &trans     &trans     &trans     &trans        &trans      &trans     &trans     &trans     &trans  &trans
+&trans    &trans  &mkp RCLK  &mkp MCLK  &mkp RCLK  &trans        &trans      &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+                             &mkp LCLK  &trans     &mkp RCLK     &mkp RCLK   &mkp LCLK
             >;
         };
 
