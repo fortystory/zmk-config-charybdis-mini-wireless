@@ -125,10 +125,10 @@
 
         AUTO-MOUSE {
             bindings = <
-&kp TAB         &kp Q    &kp W           &kp E        &kp R             &kp T           &kp Y  &kp U              &kp I        &kp O            &kp P        &kp BSPC
-&kp LCTRL       &kp A    &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G           &kp H  &mt RIGHT_SHIFT J  &mt RCTRL K  &mt RIGHT_ALT L  &kp SEMI     &kp SQT
-&kp LEFT_SHIFT  &lt 5 Z  &kp X           &kp C        &kp V             &kp B           &kp N  &kp M              &kp COMMA    &kp DOT          &lt 5 SLASH  &kp GRAVE
-                                         &mkp LCLK    &mkp MCLK         &u_mm 1 RCLK    &mo 2  &kp ENTER
+&kp TAB         &kp Q    &kp W           &kp E        &kp R             &kp T           &kp Y           &kp U           &kp I         &kp O            &kp P        &kp BSPC
+&kp LCTRL       &kp A    &mt LEFT_ALT S  &mt LCTRL D  &mt LEFT_SHIFT F  &kp G           &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp SEMI     &kp SQT
+&kp LEFT_SHIFT  &lt 5 Z  &kp X           &kp C        &kp V             &kp B           &kp N           &kp M           &kp COMMA     &kp DOT          &lt 5 SLASH  &kp GRAVE
+                                         &mkp LCLK    &mkp MCLK         &u_mm 1 RCLK    &mo 2           &kp ENTER
             >;
         };
 
