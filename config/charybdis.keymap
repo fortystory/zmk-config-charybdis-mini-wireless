@@ -141,7 +141,7 @@
 &kp CARET  &kp AMPERSAND    &kp AT_SIGN     &kp POUND               &kp DOLLAR              &kp PERCENT       &trans  &trans     &trans     &trans    &trans    &kp BSPC
 &kp TILDE  &kp EXCLAMATION  &kp ASTRK       &mt GREATER_THAN MINUS  &mt GREATER_THAN EQUAL  &kp UNDERSCORE    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
 &kp BSLH   &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp LEFT_BRACKET        &kp PIPE          &trans  &trans     &trans     &trans    &trans    &kp DELETE
-                                            &kp PIPE                &kp SPACE               &kp UNDERSCORE    &trans  &trans
+                                            &kp UNDERSCORE          &kp SPACE               &kp PIPE          &trans  &trans
             >;
 
             label = "!@#$";
@@ -180,10 +180,10 @@
 
         mouse {
             bindings = <
-&kp ESC         &trans  &trans     &kp HOME   &kp PAGE_UP    &trans       &trans    &trans     &trans  &trans     &trans  &kp BACKSPACE
-&kp LCTRL       &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK      &trans       &kp LEFT  &kp DOWN   &kp UP  &kp RIGHT  &trans  &trans
-&kp LEFT_SHIFT  &none   &trans     &kp END    &kp PAGE_DOWN  &none        &kp DEL   &trans     &trans  &trans     &trans  &trans
-                                   &mkp MCLK  &mkp RCLK      &mkp LCLK    &trans    &kp ENTER
+&none  &trans    &trans    &none      &none      &trans       &trans     &trans     &trans  &trans     &trans  &kp BACKSPACE
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans       &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT  &trans  &trans
+&none  &none     &trans    &none      &none      &none        &kp DEL    &trans     &trans  &trans     &trans  &trans
+                           &mkp MCLK  &mkp RCLK  &mkp LCLK    &kp ENTER  &kp ENTER
             >;
         };
 
