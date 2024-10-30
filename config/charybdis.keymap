@@ -123,6 +123,11 @@
             bindings = <&mkp MCLK>;
             key-positions = <31 33>;
         };
+
+        colon {
+            bindings = <&kp COLON>;
+            key-positions = <16 22>;
+        };
     };
 
     macros {
@@ -146,10 +151,10 @@
 
         BASE {
             bindings = <
-&kp GRAVE       &kp Q       &kp W       &kp E        &kp R         &kp T        &kp Y        &kp U         &kp I        &kp O       &kp P               &kp BSPC
-&kp ESC         &mt LWIN A  &mt LALT S  &mt LCTRL D  &mt LSHIFT F  &kp G        &kp H        &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RWIN SEMICOLON  &kp APOS
-&kp LEFT_SHIFT  &lt 5 Z     &kp X       &kp C        &kp V         &kp B        &kp N        &kp M         &kp COMMA    &kp DOT     &lt 5 SEMICOLON     &kp ENTER
-                                        &mo 3        &kp SPACE     &lt 1 TAB    &lt 2 ENTER  &lt 4 SPACE
+&kp GRAVE       &kp Q       &kp W       &kp E             &kp R         &kp T        &kp Y        &kp U         &kp I        &kp O       &kp P               &kp BSPC
+&kp ESC         &mt LWIN A  &mt LALT S  &mt LCTRL D       &mt LSHIFT F  &kp G        &kp H        &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RWIN SEMICOLON  &kp APOS
+&kp LEFT_SHIFT  &lt 5 Z     &kp X       &kp C             &kp V         &kp B        &kp N        &kp M         &kp COMMA    &kp DOT     &lt 5 SEMICOLON     &kp ENTER
+                                        &lt 1 UNDERSCORE  &kp SPACE     &lt 3 TAB    &lt 4 SPACE  &lt 2 ENTER
             >;
 
             label = "Corne";
