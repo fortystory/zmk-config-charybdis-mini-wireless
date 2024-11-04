@@ -127,6 +127,7 @@
         colon {
             bindings = <&kp COLON>;
             key-positions = <16 22>;
+            timeout-ms = <100>;
         };
     };
 
