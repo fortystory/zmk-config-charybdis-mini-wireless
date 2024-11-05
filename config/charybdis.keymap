@@ -87,21 +87,25 @@
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <2 3>;
+            require-prior-idle-ms = <60>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <8 9>;
+            require-prior-idle-ms = <60>;
         };
 
         left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
+            require-prior-idle-ms = <60>;
         };
 
         right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
+            require-prior-idle-ms = <60>;
         };
 
         left_brace {
