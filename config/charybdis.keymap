@@ -59,8 +59,8 @@
             key-positions = <33 34 35>;
         };
 
-        f17 {
-            bindings = <&kp F17>;
+        f9 {
+            bindings = <&kp F9>;
             key-positions = <37 40>;
         };
 
@@ -99,7 +99,7 @@
         left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
             key-positions = <3 4>;
-            require-prior-idle-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         right_parenthesis {
@@ -132,6 +132,11 @@
             bindings = <&kp COLON>;
             key-positions = <16 22>;
             timeout-ms = <80>;
+        };
+
+        alt_tab {
+            bindings = <&kp LA(TAB)>;
+            key-positions = <38 39>;
         };
     };
 
