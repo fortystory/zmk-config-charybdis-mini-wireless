@@ -154,6 +154,12 @@
             key-positions = <15 16>;
             layers = <2>;
         };
+
+        arraw_eq {
+            bindings = <&arraw_eq>;
+            key-positions = <3 4>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -191,6 +197,13 @@
             bindings = <&kp MINUS &kp GREATER_THAN>;
             label = "ARRAW";
         };
+
+        arraw_eq: arraw_eq {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
+            label = "ARRAW_EQ";
+        };
     };
 
     keymap {
@@ -221,7 +234,7 @@
         aymbols {
             bindings = <
 &kp CARET  &kp AMPERSAND    &kp AT_SIGN     &kp POUND             &kp DOLLAR        &kp PERCENT       &trans  &trans     &trans     &trans    &trans    &kp BSPC
-&kp TILDE  &kp EXCLAMATION  &kp ASTRK       &kp MINUS             &kp GREATER_THAN  &kp UNDERSCORE    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
+&kp TILDE  &kp EXCLAMATION  &kp ASTRK       &kp MINUS             &kp EQUAL         &kp UNDERSCORE    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
 &kp BSLH   &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp PIPE          &trans  &trans     &trans     &trans    &trans    &kp DELETE
                                             &kp UNDERSCORE        &kp SPACE         &kp PIPE          &trans  &trans
             >;
