@@ -138,6 +138,22 @@
             bindings = <&kp LA(TAB)>;
             key-positions = <38 39>;
         };
+
+        left_bracket_and_quotation {
+            bindings = <&left_bracket_and_quotation>;
+            key-positions = <2 3 4>;
+        };
+
+        quotation_and_right_bracket {
+            bindings = <&quotation_and_right_bracket>;
+            key-positions = <7 9 8>;
+        };
+
+        arraw {
+            bindings = <&arraw>;
+            key-positions = <15 16>;
+            layers = <2>;
+        };
     };
 
     macros {
@@ -154,6 +170,27 @@
             bindings = <&kp L &kp I>;
             label = "MACRO_L_I";
         };
+
+        left_bracket_and_quotation: left_bracket_and_quotation {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp SQT>;
+            label = "LEFT_BRACKET_AND_QUOTATION";
+        };
+
+        quotation_and_right_bracket: quotation_and_right_bracket {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SQT &kp RIGHT_BRACKET>;
+            label = "QUOTATION_AND_RIGHT_BRACKET";
+        };
+
+        arraw: arraw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
+            label = "ARRAW";
+        };
     };
 
     keymap {
@@ -164,7 +201,7 @@
 &kp GRAVE       &kp Q       &kp W       &kp E             &kp R         &kp T        &kp Y        &kp U         &kp I        &kp O       &kp P               &kp BSPC
 &kp ESC         &mt LWIN A  &mt LALT S  &mt LCTRL D       &mt LSHIFT F  &kp G        &kp H        &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RWIN SEMICOLON  &kp APOS
 &kp LEFT_SHIFT  &lt 5 Z     &kp X       &kp C             &kp V         &kp B        &kp N        &kp M         &kp COMMA    &kp DOT     &lt 5 SLASH         &kp ENTER
-                                        &lt 1 UNDERSCORE  &kp SPACE     &lt 3 TAB    &lt 4 ENTER  &lt 2 SPACE
+                                        &lt 1 UNDERSCORE  &kp SPACE     &lt 3 TAB    &lt 4 EQUAL  &lt 2 SPACE
             >;
 
             label = "Corne";
@@ -183,10 +220,10 @@
 
         aymbols {
             bindings = <
-&kp CARET  &kp AMPERSAND    &kp AT_SIGN     &kp POUND               &kp DOLLAR              &kp PERCENT       &trans  &trans     &trans     &trans    &trans    &kp BSPC
-&kp TILDE  &kp EXCLAMATION  &kp ASTRK       &mt GREATER_THAN MINUS  &mt GREATER_THAN EQUAL  &kp UNDERSCORE    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
-&kp BSLH   &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS    &kp LEFT_BRACKET        &kp PIPE          &trans  &trans     &trans     &trans    &trans    &kp DELETE
-                                            &kp UNDERSCORE          &kp SPACE               &kp PIPE          &trans  &trans
+&kp CARET  &kp AMPERSAND    &kp AT_SIGN     &kp POUND             &kp DOLLAR        &kp PERCENT       &trans  &trans     &trans     &trans    &trans    &kp BSPC
+&kp TILDE  &kp EXCLAMATION  &kp ASTRK       &kp MINUS             &kp GREATER_THAN  &kp UNDERSCORE    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
+&kp BSLH   &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp PIPE          &trans  &trans     &trans     &trans    &trans    &kp DELETE
+                                            &kp UNDERSCORE        &kp SPACE         &kp PIPE          &trans  &trans
             >;
 
             label = "!@#$";
