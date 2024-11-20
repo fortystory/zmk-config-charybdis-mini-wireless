@@ -130,8 +130,8 @@
             timeout-ms = <80>;
         };
 
-        alt_tab {
-            bindings = <&kp LA(TAB)>;
+        f20 {
+            bindings = <&kp F20>;
             key-positions = <38 39>;
         };
 
