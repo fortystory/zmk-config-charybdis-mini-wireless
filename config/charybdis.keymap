@@ -61,7 +61,7 @@
 
         f9 {
             bindings = <&kp F8>;
-            key-positions = <37 40>;
+            key-positions = <38 39>;
         };
 
         left_lclk {
@@ -132,7 +132,7 @@
 
         f20 {
             bindings = <&kp F20>;
-            key-positions = <38 39>;
+            key-positions = <37 40>;
         };
 
         left_bracket_and_quotation {
