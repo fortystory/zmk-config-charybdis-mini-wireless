@@ -7,7 +7,7 @@
 #define U_TAPPING_TERM 200
 
 &mt {
-    quick-tap-ms = <0>;
+    quick-tap-ms = <120>;
     flavor = "tap-preferred";
     tapping-term-ms = <100>;
 };
