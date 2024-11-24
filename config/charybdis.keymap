@@ -7,7 +7,7 @@
 #define U_TAPPING_TERM 200
 
 &mt {
-    quick-tap-ms = <180>;
+    quick-tap-ms = <120>;
     flavor = "tap-preferred";
 };
 
@@ -23,30 +23,40 @@
             bindings = <&mkp MB4>;
             key-positions = <31 30>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         forward {
             bindings = <&mkp MB5>;
             key-positions = <29 28>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         middle-right {
             bindings = <&mkp MB3>;
             key-positions = <33 31>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         middle-left {
             bindings = <&mkp MB3>;
             key-positions = <28 26>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         delete {
             bindings = <&kp DELETE>;
             key-positions = <34 35>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         lblu {
@@ -67,35 +77,49 @@
         left_lclk {
             bindings = <&mkp LCLK>;
             key-positions = <28 27>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
+            layers = <0>;
         };
 
         right_lclk {
             bindings = <&mkp LCLK>;
             key-positions = <31 32>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
+            layers = <0>;
         };
 
         left_rclk {
             bindings = <&mkp RCLK>;
             key-positions = <27 26>;
+            layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         right_rclk {
             bindings = <&mkp RCLK>;
             key-positions = <32 33>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
+            layers = <0>;
         };
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <2 3>;
-            require-prior-idle-ms = <60>;
+            require-prior-idle-ms = <30>;
             layers = <0>;
+            timeout-ms = <60>;
         };
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <8 9>;
-            require-prior-idle-ms = <60>;
+            require-prior-idle-ms = <30>;
             layers = <0>;
+            timeout-ms = <60>;
         };
 
         left_parenthesis {
@@ -103,31 +127,39 @@
             key-positions = <3 4>;
             require-prior-idle-ms = <30>;
             layers = <0>;
+            timeout-ms = <60>;
         };
 
         right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
             key-positions = <7 8>;
-            require-prior-idle-ms = <60>;
+            require-prior-idle-ms = <30>;
             layers = <0>;
+            timeout-ms = <60>;
         };
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
             key-positions = <2 4>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <7 9>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         colon {
             bindings = <&kp COLON>;
             key-positions = <16 22>;
-            timeout-ms = <80>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
+            layers = <0>;
         };
 
         f20 {
@@ -223,7 +255,7 @@
 &kp GRAVE  &none     &none     &none      &none      &none       &none       &kp C_VOL_DN  &kp C_VOL_UP  &none      &none           &kp BSPC
 &kp ESC    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &none       &kp LEFT    &kp DOWN      &kp UP        &kp RIGHT  &mt HOME PG_UP  &kp ENTER
 &kp LSHFT  &none     &none     &none      &none      &none       &kp C_MUTE  &kp C_PREV    &kp C_NEXT    &kp C_PP   &mt END PG_DN   &kp DELETE
-                               &kp LSHFT  &kp LCTRL  &kp LALT    &kp ENTER   &kp SPACE
+                               &kp LCTRL  &kp LSHFT  &kp LALT    &kp RSHFT   &kp RCTRL
             >;
 
             label = "HJKL_media";
@@ -231,10 +263,10 @@
 
         symbols {
             bindings = <
-&kp CARET  &kp AMPERSAND    &kp AT_SIGN     &kp POUND             &kp DOLLAR        &kp PERCENT       &trans  &trans     &trans     &trans    &trans    &kp BSPC
-&kp TILDE  &kp EXCLAMATION  &kp ASTRK       &kp MINUS             &kp EQUAL         &kp UNDERSCORE    &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
-&kp BSLH   &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp PIPE          &trans  &trans     &trans     &trans    &trans    &kp DELETE
-                                            &kp LSHFT             &kp LCTRL         &kp LALT          &trans  &trans
+&kp CARET  &kp AMPERSAND    &kp AT_SIGN     &kp POUND             &kp DOLLAR        &kp PERCENT       &trans     &trans     &trans     &trans    &trans    &kp BSPC
+&kp TILDE  &kp EXCLAMATION  &kp ASTRK       &kp MINUS             &kp EQUAL         &kp UNDERSCORE    &trans     &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
+&kp BSLH   &kp LESS_THAN    &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp PIPE          &trans     &trans     &trans     &trans    &trans    &kp DELETE
+                                            &kp LCTRL             &kp LSHFT         &kp LALT          &kp RSHFT  &kp RCTRL
             >;
 
             label = "!@#$";
@@ -245,7 +277,7 @@
 &kp GRAVE  &trans    &trans    &trans     &trans     &trans      &kp ASTERISK  &kp N7     &kp N8  &kp N9  &kp EQUAL  &kp BSPC
 &kp ESC    &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans      &kp MINUS     &kp N4     &kp N5  &kp N6  &kp N0     &kp ENTER
 &kp LSHFT  &trans    &trans    &trans     &trans     &trans      &kp PLUS      &kp N1     &kp N2  &kp N3  &kp FSLH   &kp DOT
-                               &kp LSHFT  &kp LCTRL  &kp LALT    &kp RSHFT     &kp RCTRL
+                               &kp LCTRL  &kp LSHFT  &kp LALT    &kp RSHFT     &kp RCTRL
             >;
 
             label = "12345";
@@ -253,10 +285,10 @@
 
         Fn {
             bindings = <
-&none  &kp F12  &kp F11  &kp F10    &kp F9     &none       &trans  &trans     &trans     &trans    &trans    &kp BSPC
-&none  &kp F4   &kp F3   &kp F2     &kp F1     &none       &trans  &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
-&none  &kp F8   &kp F7   &kp F6     &kp F5     &none       &trans  &trans     &trans     &trans    &trans    &kp DELETE
-                         &kp LSHFT  &kp LCTRL  &kp LALT    &trans  &trans
+&none  &kp F12  &kp F11  &kp F10    &kp F9     &none       &trans     &trans     &trans     &trans    &trans    &kp BSPC
+&none  &kp F4   &kp F3   &kp F2     &kp F1     &none       &trans     &kp RSHFT  &kp RCTRL  &kp RALT  &kp RGUI  &kp ENTER
+&none  &kp F8   &kp F7   &kp F6     &kp F5     &none       &trans     &trans     &trans     &trans    &trans    &kp DELETE
+                         &kp LCTRL  &kp LSHFT  &kp LALT    &kp RSHFT  &kp RCTRL
             >;
 
             label = "Fn";
