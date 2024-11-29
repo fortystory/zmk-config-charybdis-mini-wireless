@@ -6,7 +6,10 @@
 
 #define U_TAPPING_TERM 200
 
-&mt { flavor = "tap-preferred"; };
+&mt {
+    flavor = "tap-preferred";
+    tapping-term-ms = <150>;
+};
 
 / {
     chosen { zmk,matrix_transform = &default_transform; };
@@ -197,11 +200,13 @@
         dollar {
             bindings = <&kp DOLLAR>;
             key-positions = <31 4>;
+            layers = <0>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <23 22>;
+            layers = <0>;
         };
     };
 
