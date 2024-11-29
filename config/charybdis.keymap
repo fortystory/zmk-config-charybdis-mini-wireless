@@ -197,12 +197,6 @@
             layers = <0>;
         };
 
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <31 4>;
-            layers = <0>;
-        };
-
         enter {
             bindings = <&kp ENTER>;
             key-positions = <23 22>;
@@ -224,6 +218,12 @@
         left_del {
             bindings = <&kp DEL>;
             key-positions = <25 24>;
+            layers = <0>;
+        };
+
+        dollar_combo {
+            bindings = <&kp EQUAL>;
+            key-positions = <31 4>;
             layers = <0>;
         };
     };
@@ -269,36 +269,6 @@
             #binding-cells = <0>;
             bindings = <&kp EQUAL &kp GREATER_THAN>;
             label = "ARRAW_EQ";
-        };
-    };
-
-    behaviors {
-        l_mt: l_mt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "L_MT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            hold-trigger-key-positions = <30 6 18 7 19 31 33 20 32 21 8 11 10 9 22 35 34 23 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
-            flavor = "tap-preferred";
-            retro-tap;
-        };
-
-        r_mt: r_mt {
-            compatible = "zmk,behavior-hold-tap";
-            label = "R_MT";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <100>;
-            quick-tap-ms = <200>;
-            require-prior-idle-ms = <125>;
-            flavor = "tap-preferred";
-            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-            retro-tap;
         };
     };
 
