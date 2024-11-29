@@ -105,7 +105,7 @@
 
         left_bracket {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <2 3>;
+            key-positions = <14 15 16>;
             require-prior-idle-ms = <30>;
             layers = <0>;
             timeout-ms = <60>;
@@ -113,7 +113,7 @@
 
         right_bracket {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <8 9>;
+            key-positions = <19 20 21>;
             require-prior-idle-ms = <30>;
             layers = <0>;
             timeout-ms = <60>;
@@ -121,7 +121,7 @@
 
         left_parenthesis {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <3 4>;
+            key-positions = <26 28 27>;
             require-prior-idle-ms = <30>;
             layers = <0>;
             timeout-ms = <60>;
@@ -129,7 +129,7 @@
 
         right_parenthesis {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <7 8>;
+            key-positions = <31 32 33>;
             require-prior-idle-ms = <30>;
             layers = <0>;
             timeout-ms = <60>;
@@ -137,7 +137,7 @@
 
         left_brace {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <2 4>;
+            key-positions = <2 4 3>;
             layers = <0>;
             timeout-ms = <60>;
             require-prior-idle-ms = <30>;
@@ -145,7 +145,7 @@
 
         right_brace {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <7 9>;
+            key-positions = <7 9 8>;
             layers = <0>;
             timeout-ms = <60>;
             require-prior-idle-ms = <30>;
@@ -166,13 +166,13 @@
 
         left_bracket_and_quotation {
             bindings = <&left_bracket_and_quotation>;
-            key-positions = <2 3 4>;
+            key-positions = <2 4>;
             layers = <0>;
         };
 
         quotation_and_right_bracket {
             bindings = <&quotation_and_right_bracket>;
-            key-positions = <7 9 8>;
+            key-positions = <7 9>;
             layers = <0>;
         };
 
@@ -268,10 +268,10 @@
 
         BASE {
             bindings = <
-&kp GRAVE       &kp Q         &kp W         &kp E                 &kp R           &kp T      &kp Y      &kp U           &kp I          &kp O         &kp P                 &kp BSPC
-&kp ESC         &l_mt LWIN A  &l_mt LALT S  &l_mt LCTRL D         &l_mt LSHIFT F  &kp G      &kp H      &r_mt RSHIFT J  &r_mt RCTRL K  &r_mt RALT L  &r_mt RWIN SEMICOLON  &kp APOS
-&kp LEFT_SHIFT  &lt 5 Z       &kp X         &lt 3 C               &lt 1 V         &kp B      &kp N      &lt 2 M         &lt 4 COMMA    &kp DOT       &lt 5 SLASH           &kp EQUAL
-                                            &mt LCTRL UNDERSCORE  &kp SPACE       &kp TAB    &kp ENTER  &kp SPACE
+&kp GRAVE       &kp Q       &kp W       &kp E                 &kp R         &kp T      &kp Y      &kp U         &kp I        &kp O       &kp P               &kp BSPC
+&kp ESC         &mt LWIN A  &mt LALT S  &mt LCTRL D           &mt LSHIFT F  &kp G      &kp H      &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RWIN SEMICOLON  &kp APOS
+&kp LEFT_SHIFT  &lt 5 Z     &lt 3 X     &kp C                 &lt 1 V       &kp B      &kp N      &lt 2 M       &kp COMMA    &lt 4 DOT   &lt 5 SLASH         &kp EQUAL
+                                        &mt LCTRL UNDERSCORE  &kp SPACE     &kp TAB    &kp ENTER  &kp SPACE
             >;
 
             label = "Corne";
