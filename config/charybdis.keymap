@@ -166,13 +166,13 @@
 
         left_bracket_and_quotation {
             bindings = <&left_bracket_and_quotation>;
-            key-positions = <2 4>;
+            key-positions = <16 14>;
             layers = <0>;
         };
 
         quotation_and_right_bracket {
             bindings = <&quotation_and_right_bracket>;
-            key-positions = <7 9>;
+            key-positions = <19 21>;
             layers = <0>;
         };
 
@@ -186,6 +186,22 @@
             bindings = <&arraw_eq>;
             key-positions = <3 4>;
             layers = <2>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <31 16>;
+            layers = <0>;
+        };
+
+        dollar {
+            bindings = <&kp DOLLAR>;
+            key-positions = <31 4>;
+        };
+
+        enter {
+            bindings = <&kp ENTER>;
+            key-positions = <23 22>;
         };
     };
 
