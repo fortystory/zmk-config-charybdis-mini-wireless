@@ -208,6 +208,24 @@
             key-positions = <23 22>;
             layers = <0>;
         };
+
+        bs {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <1 0>;
+            layers = <0>;
+        };
+
+        left_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <12 13>;
+            layers = <0>;
+        };
+
+        left_del {
+            bindings = <&kp DEL>;
+            key-positions = <25 24>;
+            layers = <0>;
+        };
     };
 
     macros {
