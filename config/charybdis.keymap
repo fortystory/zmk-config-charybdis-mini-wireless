@@ -8,8 +8,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <120>;
+    quick-tap-ms = <150>;
 };
 
 / {
@@ -287,14 +286,29 @@
         };
     };
 
+    behaviors {
+        l_s_behavior: l_s_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "L_S_BEHAVIOR";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            retro-tap;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         BASE {
             bindings = <
-&kp GRAVE       &kp Q       &kp W       &kp E                 &kp R         &kp T      &kp Y      &kp U         &kp I        &kp O       &kp P               &kp BSPC
-&kp ESC         &mt LWIN A  &mt LALT S  &mt LCTRL D           &mt LSHIFT F  &kp G      &kp H      &mt RSHIFT J  &mt RCTRL K  &mt RALT L  &mt RWIN SEMICOLON  &kp APOS
-&kp LEFT_SHIFT  &lt 5 Z     &lt 3 X     &kp C                 &lt 1 V       &kp B      &kp N      &lt 2 M       &kp COMMA    &lt 4 DOT   &lt 5 SLASH         &kp EQUAL
+&kp GRAVE       &kp Q       &kp W       &kp E                 &kp R         &kp T      &kp Y      &kp U              &kp I        &kp O       &kp P               &kp BSPC
+&kp ESC         &mt LWIN A  &mt LALT S  &mt LCTRL D           &mt LSHIFT F  &kp G      &kp H      &mt RSHIFT J       &mt RCTRL K  &mt RALT L  &mt RWIN SEMICOLON  &kp APOS
+&kp LEFT_SHIFT  &lt 5 Z     &lt 3 X     &kp C                 &lt 1 V       &kp B      &kp N      &l_s_behavior 2 M  &kp COMMA    &lt 4 DOT   &lt 5 SLASH         &kp EQUAL
                                         &mt LCTRL UNDERSCORE  &kp SPACE     &kp TAB    &kp ENTER  &kp SPACE
             >;
 
