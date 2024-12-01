@@ -165,6 +165,7 @@
         combo_f20 {
             bindings = <&kp F20>;
             key-positions = <37 40>;
+            layers = <0>;
         };
 
         combo_left_bracket_quotation {
@@ -233,6 +234,8 @@
             bindings = <&kp LC(F19)>;
             key-positions = <16 17>;
             layers = <0>;
+            timeout-ms = <60>;
+            require-prior-idle-ms = <30>;
         };
 
         combo_ctrl_f20 {
@@ -294,7 +297,7 @@
 
             #binding-cells = <2>;
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
-            flavor = "tap-unless-interrupted";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <150>;
             retro-tap;
