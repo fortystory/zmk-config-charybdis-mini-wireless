@@ -60,12 +60,12 @@
         };
 
         combo_lblu {
-            bindings = <&tog 7>;
+            bindings = <&tog 8>;
             key-positions = <24 25 26>;
         };
 
         combo_rblu {
-            bindings = <&tog 7>;
+            bindings = <&tog 8>;
             key-positions = <33 34 35>;
         };
 
@@ -332,6 +332,17 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans
             >;
+        };
+
+        mouse {
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &trans    &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+                           &trans     &trans     &trans    &trans  &trans
+            >;
+
+            label = "mouse";
         };
 
         BULETOOTH {
