@@ -3,7 +3,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
+#include <dt-bindings/zmk/pointing.h>
 
 #define U_TAPPING_TERM 200
 
@@ -45,7 +45,7 @@
             require-prior-idle-ms = <30>;
         };
 
-        middle-left {
+        combo_middle-left {
             bindings = <&mkp MB3>;
             key-positions = <26 28>;
             layers = <0>;
@@ -195,6 +195,18 @@
         combo_ctrl_f20 {
             bindings = <&kp LC(F20)>;
             key-positions = <4 5>;
+            layers = <0>;
+        };
+
+        combo_minus {
+            bindings = <&kp MINUS>;
+            key-positions = <32 15>;
+            layers = <0>;
+        };
+
+        combo_equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <32 16>;
             layers = <0>;
         };
     };
