@@ -8,7 +8,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    quick-tap-ms = <150>;
+    quick-tap-ms = <250>;
     tapping-term-ms = <220>;
 };
 
@@ -258,7 +258,7 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29>;
             flavor = "tap-preferred";
             tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <250>;
             retro-tap;
         };
 
@@ -272,7 +272,7 @@
             flavor = "tap-unless-interrupted";
             retro-tap;
             tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
+            quick-tap-ms = <250>;
         };
     };
 
@@ -283,7 +283,7 @@
             bindings = <
 &kp GRAVE       &kp Q       &kp W       &kp E                 &kp R         &kp T      &kp Y      &kp U         &kp I                  &kp O                &kp P          &kp BSPC
 &kp ESC         &mt LWIN A  &mt LALT S  &mt LCTRL D           &mt LSHIFT F  &kp G      &kp H      &mt RSHIFT J  &mt RCTRL K            &mt RALT L           &mt RWIN SEMI  &kp APOS
-&kp LEFT_SHIFT  &lt 6 Z     &lt 4 X     &lt 3 C               &lt 1 V       &kp B      &kp N      &kp M         &l_s_behavior 2 COMMA  &l_s_behavior 5 DOT  &lt 6 SLASH    &kp LEFT_WIN
+&kp LEFT_SHIFT  &lt 6 Z     &lt 4 X     &lt 3 C               &lt 1 V       &kp B      &kp N      &kp M         &l_s_behavior 2 COMMA  &l_s_behavior 5 DOT  &lt 6 SLASH    &kp LCTRL
                                         &mt LCTRL UNDERSCORE  &kp SPACE     &kp TAB    &kp ENTER  &kp SPACE
             >;
 
